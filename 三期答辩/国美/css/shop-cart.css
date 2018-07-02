@@ -1,0 +1,80 @@
+.zong{
+    background-color: #f3f5f7;
+}
+/*header*/
+.header .row{
+    height: 8.88rem;
+    background-color: #fff;
+}
+.header .left{
+     padding: 1% 0;
+    font-size: 10rem;
+    color: #b9b9b9;
+    padding-left: 4rem;
+}
+.header .col-xs-9{
+    text-align: center;
+    padding-left: 10rem;
+}
+.header .col-xs-9 h1{
+    font-size: 5.36rem;
+}
+.header .right div{
+     padding: 1% 0;
+    font-size: 10rem;
+    color: #b9b9b9;
+    padding-left: 4rem;
+}
+.banner{
+    text-align: center;
+}
+.banner .logo img{
+    width: 36.4rem;
+    margin: 0 auto;
+    padding-top: 3rem;
+}
+.banner .logo p{
+    font-size: 4.28rem;
+    color: #999;
+    margin-top: 6.8rem;
+}
+.banner .btt{
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+
+.banner .btt a{
+    font-size: 4.5rem;
+    border-radius: 35%;
+    background-color: #fa1e8c;
+    padding: 2% 6%;
+    color: #fff;
+}
+.main .main-top img{
+    width: 100%;
+}
+/*猜你喜欢*/
+.main .main-bottom img{
+    width: 100%;
+}
+.main .main-bottom p{
+    height: 7rem;
+    font-size: 3rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    color: #232326;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    padding: 0 4px;
+}
+.main .main-bottom span{
+    color: red;
+    font-weight: 600;
+    float: left;
+    line-height: 30px;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    font-size: 4rem;
+}

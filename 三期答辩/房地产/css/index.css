@@ -1,0 +1,237 @@
+.banner{
+	height: 750px;
+	background: url(../images/banner1.jpg) no-repeat 0px 0px;
+	background-size:cover;
+}
+.banner>h1{
+	font-size: 8em;
+	text-align: center;
+	padding-top: 2em;
+	color: white;
+	font-family: 'Francois One', sans-serif;
+}
+@media screen and (max-width: 800px) {
+	.banner{
+		height: 500px;
+	}
+	.banner>h1{
+		margin-top: 100px;
+		font-size: 2em;
+	}	
+}
+#mynav{
+	padding: 20px 0;
+	background: rgba(18,175,202,0.6);
+	border: 0px;
+}
+#mynav ul li a{
+	font-size: 1.2em;
+	font-weight: 600;
+	color: white;
+	text-align: center;
+}
+#mynav ul li a:hover{
+	color: black;
+}
+#mynav ul li a span{
+	display: block;
+	width: 0;
+	height: 2px;
+	background: black;
+}
+#mynav ul li a:hover span{
+	width: 100%;
+	transition: all 0.5s;
+}
+
+
+
+/*about*/
+.about{
+	padding: 50px 0;
+}
+.about h1{
+	font-family: 'Signika Negative', sans-serif;
+	font-size: 3em;
+	color: #00a3e4;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.about .text h2{
+	font-size: 2em;
+	color: #5a5a5a;
+}
+.about .text p{
+	font-size: 1.1em;
+	color: #868585;
+	line-height: 1.8em;
+	margin-top: 2em;
+} 
+.about .img img{
+	box-shadow:-5px 5px 3px #000;
+}
+
+
+/*scrices*/
+.scrvices{
+	padding: 50px 0;
+}
+.scrvices h1{
+	padding-bottom: 50px;
+	font-family: 'Signika Negative', sans-serif;
+    font-size: 3em;
+    color: #00a3e4;
+    text-align: center;
+    margin-bottom: .8em;
+}
+.scrvices .text{
+	text-align: center;
+}
+.scrvices .text h2{
+	font-family: 'Signika Negative', sans-serif;
+    color: #00a3e4;
+    font-size: 1.8em;
+    font-weight: 400;
+    margin: 0.5em 0 0 0;
+}
+.scrvices .text p{
+	color: #555;
+    font-size: 0.93em;
+    margin: 0 auto;
+    line-height: 1.8em;
+    font-weight: 400;
+    text-align: center;
+    width: 96%;
+}
+.scrvices .text .box{
+	margin: 0 auto;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: rgb(61,119,141);
+	transition:  all 0.5s;
+}
+.scrvices .text:hover .box{
+	background: rgb(61,199,141);
+}
+.scrvices .text .box i{
+	color: white;
+	display: block;
+	width: 26px;
+	margin: 0 auto;
+	font-size: 26px;
+	line-height:100px ;
+}
+
+
+/*house-three*/
+.banner-bottom2{
+	
+}
+.banner-bottom2 .banner-bottom-right1{
+	float: left;
+    width: 30%;
+    padding: 2.5em 1.3em 2.5em 1.8em;
+    background: #00a3e4;
+}
+.banner-bottom-right-info h3 {
+    color: #fff;
+    font-size: 24px;
+    margin: 0;
+    padding-bottom: 0em;
+    text-transform: capitalize;
+    font-family: 'Signika Negative', sans-serif;
+}
+.quis {
+    font-size: 14px;
+    color: #fff;
+    margin: 1.2em 0;
+    line-height: 1.8em;
+}
+.banner-bottom-right-info a {
+    padding: 4px 5px 4px 7px;
+    font-size: 15px;
+    color: #898989;
+    text-decoration: none;
+}
+.Nam {
+    margin: 2em 0 0;
+}
+.cate h3 {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 0 1em;
+    text-transform: capitalize;
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: 300;
+}
+.cate ul {
+    padding: 0 0 0 1em;
+    margin: 0;
+}
+.cate ul li {
+    color: #fff;
+    margin: 0px 0 16.9px;
+}
+.banner-bottom-left-grid{
+	width: 33.3%;
+	float: left;
+	    background: #f7f7f7;
+	        height: 304px;
+}
+.banner-bottom-left-grid h3{
+	    color: #00a3e4;
+    margin: 0;
+    font-size: 1.21em;
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: 500;
+    line-height: 1.3em;
+}
+.banner-bottom-left-grid .asd{
+	margin: 1.31em 0 0;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.8em;
+    font-weight: 300;
+    text-align: center;
+}
+.main{
+    background: url(../images/mid-bg.jpg) no-repeat;
+    background-size: cover;
+    min-height: 470px;
+}
+.mid-top {
+    background-color: rgba(44, 62, 80, 0.81);
+    padding: 4em 2em;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 7.6em;
+}
+.mid-top h3 {
+    color: #00a3e4;
+    font-size: 3em;
+    text-align: center;
+}
+.mid-top p {
+    font-size: 16px;
+    color: #fff;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 0.7em;
+    letter-spacing: 1.4px;
+}
+footer{
+	padding: 1em 0;
+    /*background: rgba(78, 197, 241, 0.81)*/
+}
+footer .container p{
+	text-align: center;
+    font-size: 16px;
+    color: black;
+}
+footer .container p span{
+	color: red;
+}
+
+
+

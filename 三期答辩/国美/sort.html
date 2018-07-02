@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/sort.css">
+    <link rel="stylesheet" href="css/swiper-4.2.6.min.css">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body class="clearfix zong">
+   <div class="top">
+    <div class="container onf">
+        <div class="row">
+            <div class="col-xs-8 left clearfix">
+                <div class="pic">
+                    <img src="img/shouye/close.png" alt="">
+                </div>
+                <div class="logo">
+                    <img src="img/shouye/grass_logo.png" alt="">
+                </div>
+                <div class="txt">
+                    <h2>注册送好礼</h2>
+                    <p>首单再送158元</p>
+                </div>
+            </div>
+            <div class="col-xs-4 right">
+                <a href="#">
+                    下载领取
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--    搜索框  -->
+    <div class="search">
+        <a href="index.html"><div class="logo fa fa-angle-left">
+<!--                <img src="img/shouye/grass_logo.png" alt="">-->
+        </div></a>
+        <div class="center">
+            <i class="fa fa-search"></i>
+            <input type="text" placeholder="抽奖赢5折iPhone X">
+        </div>
+        <div class="right">
+            <i class="fa fa-shopping-cart"></i>
+            <span>登录</span>
+        </div>
+    </div>
+      </div>
+   <div class="main">
+       <div class="row">
+           <div class="col-xs-3">
+               <div class="list">
+                   <ul>
+                       <li><a href="#" class="active">
+                           热门分类
+                       </a></li>
+                       <li><a href="#">
+                           手机数码
+                       </a></li>
+                       <li><a href="#">
+                           电脑办公
+                       </a></li>
+                       <li><a href="#">
+                           电视影音
+                       </a></li>
+                       <li><a href="#">
+                           空调冰洗
+                       </a></li>
+                       <li><a href="#">
+                           厨房卫浴
+                       </a></li>
+                       <li><a href="#">
+                           生活电器
+                       </a></li>
+                       <li><a href="#">
+                           食品酒水
+                       </a></li>
+                       <li><a href="#">
+                           美妆个护
+                       </a></li>
+                       <li><a href="#">
+                           母婴玩具
+                       </a></li>
+                       <li><a href="#">
+                           医疗保健
+                       </a></li>
+                       <li><a href="#">
+                           服饰鞋帽
+                       </a></li>
+                   </ul>
+               </div>
+           </div>
+           <div class="col-xs-9 one">
+                <ul class="nav">
+                    <li v-for="arr in arrs">
+                        <h3>{{arr.name}}</h3>
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <img :src="arr.img" alt="">
+                                <p>{{arr.name1}}</p>
+                            </div>
+                            <div class="col-xs-4">
+                                <img :src="arr.img2" alt="">
+                                <p>{{arr.name2}}</p>
+                            </div>
+                            <div class="col-xs-4">
+                                <img :src="arr.img3" alt="">
+                                <p>{{arr.name3}}</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+           </div>
+       </div>
+   </div>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper-4.2.6.min.js"></script>
+    <script src="js/vue.js"></script>
+    <script>
+        
+//        点击
+        var close = document.querySelector(".onf .left .pic");
+        close.onclick = function(){
+            this.parentNode.parentNode.parentNode.style.display = "none";
+            sessionStorage.closer = "true";
+        }
+        
+        if(sessionStorage.closer == "true"){
+            close.parentNode.parentNode.parentNode.style.display = "none";
+        }else{
+            close.parentNode.parentNode.parentNode.style.display = "block";
+        }
+//        间距
+        var topt = document.querySelector(".top");
+        var ma = document.querySelector(".main")
+        var th = topt.clientHeight;
+        ma.style.paddingTop=th+"px";
+        
+    //        vue.js
+//======================================
+        new Vue({
+                el:".main .row .one .nav",
+                data: {
+                    arrs:[
+                        {name:'大家电',name1: "平板电视",name2:'冰箱',name3:'壁挂式空调',img: 'img/sort/remen/1.png',img2:'img/sort/remen/2.png',img3:'img/sort/remen/3.png'},{name:'数码通讯',name1: "手机",name2:'笔记本电脑',name3:'单反相机',img: 'img/sort/remen/4.png',img2:'img/sort/remen/5.png',img3:'img/sort/remen/6.png'},{name:'厨卫生活',name1: "电风扇",name2:'空气净化器',name3:'微波炉',img: 'img/sort/remen/7.png',img2:'img/sort/remen/8.png',img3:'img/sort/remen/9.png'},{name:'日用百货',name1: "啤酒",name2:'品牌纸尿裤',name3:'床品件套',img: 'img/sort/remen/10.png',img2:'img/sort/remen/11.png',img3:'img/sort/remen/12.png'}
+                         ]
+                }
+            });
+//选项卡
+        var c3lists = document.querySelectorAll(".main>.row>.col-xs-3 .list ul li a");
+        var bian = document.querySelector(".main .row .col-xs-9")
+        for(let i=0;i<c3lists.length;i++){
+        c3lists[i].onclick = function(){
+            
+        for(let j=0;j<c3lists.length;j++){
+            c3lists[j].setAttribute("class","");
+        }
+            this.setAttribute("class","active");
+            }
+        }
+        
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+.zong{
+    background-color: #f3f5f7;
+}
+/*header*/
+.header .row{
+    height: 3.88rem;
+    background-color: #fff;
+}
+.header .left{
+    padding: 1% 0;
+    font-size: 4rem;
+    color: #b9b9b9;
+    padding-left: 1rem;
+}
+.header .col-xs-8{
+    text-align: center;
+    padding-left: 5rem;
+}
+.header .col-xs-8 h1{
+    font-size: 1.36rem;
+    margin-top: 1.5rem;
+}
+.header .right div{
+    padding: 1% 0;
+    font-size: 4rem;
+    padding-top: 0.5rem;
+    color: #b9b9b9;
+}
+/*banner*/
+.banner-top{
+    padding: .77rem 1.8rem .57rem .5rem;
+    background-size: 100%;
+    background-image: url(../img/me/bg.png);
+}
+.banner .userInfor {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+        margin: 2rem 0 2rem 1rem;
+}
+.banner .userInfor .userHead img {
+    width: 3.1rem;
+    height: 3.1rem;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+.banner .userInfor .inforList {
+    margin-left: .2rem;
+}
+.banner .userInfor .inforList p:first-child {
+    font-size: .34rem;
+    color: #fff;
+    margin: 0;
+}
+.banner .userInfor .inforList p:first-child a {
+    color: #fff;
+}
+.banner .userInfor .inforList p.noRealName {
+    background: url(../img/me/bg2.png) 0.5rem center no-repeat #B8B8B8;
+    background-size: 1.24rem auto;
+    display: inline-block;
+    text-align: center;
+    font-size: 0.22rem;
+    color: #fff;
+    padding: 0.03rem 1.15rem 0.03rem 1.8rem;
+    border-radius: 1rem;
+    margin-top: .15rem;
+}
+.banner .gift {
+    position: absolute;
+    top: 4.07rem;
+    right: 2.98rem;
+}
+.banner .gift .gift_img {
+    display: inline-block;
+    width: 2.7rem;
+    height: 3.57rem;
+    background: url(../img/me/ico1.gif) no-repeat;
+    background-size: contain;
+}
+.banner .messageBtn {
+    position: absolute;
+    right: 1rem;
+    top: 4.07rem;
+    width: 1.7rem;
+    height: 2.57rem;
+    background: url(../img/me/ico2.png) center no-repeat;
+    background-size: contain;
+}
+.banner .memberLevel {
+    position: absolute;
+    top: 6.5rem;
+    right: 0;
+    padding: 1.2rem 1.15rem 1.2rem 2.65rem;
+    background: url(../img/me/bg3.png) center no-repeat;
+    background-size: 100%;
+    font-size: .26rem;
+    color: #fff;
+}
+.banner .memberLevel span {
+    position: absolute;
+    top: 1.21rem;
+    left: .7rem;
+    font-size: .22rem;
+    color: #FD0175;
+    font-weight: 700;
+}
+/*order的样式*/
+
+.order {
+    margin-top: 8px;
+    background-color: #fff;
+    padding: 10px 0px;
+}
+
+.order .top {
+    padding-bottom: 10px;
+}
+
+.order .top p {
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 0;
+    line-height: 0.9rem;
+    float: left;
+}
+
+.order .top a {
+    font-size: 0.7rem;
+    color: #888;
+    float: right;
+    line-height: 0.9rem;
+    display: block;
+}
+
+.order .nav ul {
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.order .nav ul li {
+    width: 20%;
+    float: left;
+    list-style: none;
+}
+
+.order .nav ul li a {
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.order .nav ul li a img {
+    width: 35%;
+    margin: 0 auto;
+}
+
+.order .nav ul li a p {
+    font-size: 0.7rem;
+    color: #333;
+    padding-top: 5px;
+    margin-bottom: 0;
+}
+/*main*/
+.main-top .maylike_title {
+    height: .3rem;
+    text-align: center;
+    margin: .22rem 0;
+    
+}
+.main .maylike_title:after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid #c2c2c2;
+    margin-top: -1.2rem;
+}
+.main-top .maylike_title h4 {
+    background-color: #f2f2f2;
+    color: #999;
+    font-size: .24rem;
+    line-height: .24rem;
+    padding: 0 .2rem;
+    display: inline-block;
+}
+.main-top .maylike_title h4 span {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background: url(../img/me/ico3.png) left center no-repeat;
+    background-size: contain;
+    position: relative;
+    top: .15rem;
+    margin-right: .1rem;
+}
+/*猜你喜欢*/
+.main-bottom{
+    margin-top: 3rem;
+}
+.main-bottom .like-logo img{
+    width: 100%;
+}
+.main-bottom .like-bottom img{
+    width: 100%;
+}
+.main-bottom .like-bottom p{
+    height: 33px;
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    color: #232326;
+    margin-top: 5px;
+    line-height: 17px;
+    margin-bottom: 3px;
+    padding: 0 4px;
+}
+.main-bottom .like-bottom span{
+    color: red;
+    font-weight: 600;
+    float: left;
+    line-height: 30px;
+    padding-left: 5px;
+}
+.main-bottom .like-bottom .col-xs-6{
+    padding: 0;
+    padding-bottom: 1%;
+    background-color: #fff;
+}

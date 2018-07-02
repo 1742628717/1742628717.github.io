@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clearfix:after{
+    clear: both;
+    display: table;
+    content: "";
+}
+li{
+    list-style: none;
+}
+.zong{
+    background-color: #f3f5f7;
+}
+.bl{
+    height: 500px;
+}
+.top{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+/*顶部*/
+.onf{
+    width: 100%;
+/*    position: fixed;*/
+/*    top: 0px;*/
+}
+.onf .left{
+    background-color: black;
+}
+.onf .right{
+    background-color: red;
+    text-align: center;
+    padding: 15px 15px;
+    
+}
+.onf .right a{
+    color: #fff;
+    font-size: 19px;
+    text-decoration: none; 
+}
+.onf .left .pic,.onf .left .logo,.onf .left .txt{
+    float: left;
+}
+.onf .left{
+    padding-top: 8px;
+}
+.onf .left .pic{
+    width: 12%;
+    padding-top: 5px;
+}
+.onf .left .pic img{
+    width: 100%;
+    padding: 5px;
+}
+.onf .left .logo{
+    width: 20%;
+}
+.onf .left .logo img{
+    width: 100%;
+}
+.onf .left .txt{
+    width: 60%;
+}
+.onf .left .txt h2{
+    font-size: 20px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: aliceblue;
+    
+}
+.onf .left .txt p{
+    font-size: 10px;
+    color: #999;
+}
+/*搜索框*/
+
+.search {
+    font-size: 12px;
+    background-color: #fff;
+    color: #fff;
+/*    padding-top: 24px;*/
+    width: 100%;
+/*    position: fixed;*/
+    z-index: 10;
+    transition: background 0.5s;
+}
+
+.search:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.search .logo,
+.search .center,
+.search .right {
+    float: left;
+}
+
+.search .logo,
+.search .right {
+    width: 20%;
+    text-align: center;
+}
+
+.search .logo{
+     padding: 5px 0;
+    font-size: 4rem;
+    margin-top: 1%;
+    color: #b9b9b9;
+}
+
+.search .center {
+    width: 60%;
+    position: relative;
+    padding: 10px 0;
+}
+
+.search .center span{
+    display: block;
+}
+
+.search .right i {
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.search .center input {
+    width: 100%;
+    height: 36px;
+    padding: 0 36px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: #f6f6f6;
+}
+
+.search .center i {
+    position: absolute;
+    font-size: 20px;
+    color: #999;
+    left: 12px;
+    top: 17px;
+}
+.search .right{
+    color: #666;
+    font-size: 15px;
+    padding: 15px 0;
+}
+/*main的样式*/
+
+.main {
+    padding-top: 44px;
+}
+
+.main .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.main .col-xs-3,
+.main .col-xs-9 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.main>.row>.col-xs-3 {
+    position: fixed;
+}
+
+.main>.row>.col-xs-9 {
+    margin-left: 25%;
+}
+
+.main .col-xs-3 .list ul li a {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #333;
+    background-color: #fff;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+/*    padding: 0px 5px;*/
+    border: 1px solid #eaeaea;
+    border-top: 0px;
+}
+
+.main .col-xs-3 .list ul li a.active {
+    border-left: 2px solid #ca141d;
+    color: #e01d20;
+    background-color: #f6f6f6;
+}
+
+.main .col-xs-9 {
+    padding-left: 5px;
+    padding-right: 5px;
+} 
+.main .col-xs-9 .nav .row .col-xs-4 img{
+    width:100%;
+}
+.main .col-xs-9 .nav .row .col-xs-4{
+    padding: 0;
+}
+.main .col-xs-9 .nav .row .col-xs-4{
+    padding: 0 5px;
+    text-align: center;
+}
+.main .col-xs-9 .nav li{
+    padding-bottom: 5px;
+    
+}
+.main .col-xs-9 .nav h3{
+    margin: 0;
+    font-size: .2rem;
+    padding-bottom: .2rem;
+        padding-top: .2rem;
+    color: #999;
+}
+.main .col-xs-9 .nav .col-xs-4 p{
+    font-size: .22rem;
+    color: #666;
+}
+/*底部导航*/
+
+nav {
+    width: 100%;
+    padding-top: 10px;
+    border-top: 1px solid #cbcbcb;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+    background-color: #fff;
+}
+
+nav ul::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+nav ul li {
+    list-style: none;
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+nav ul li a {
+    color: #5d5f6a;
+    text-decoration: none;
+    position: relative;
+    display: block;
+}
+nav ul li a div{
+    width: 100%
+}
+nav ul li a .ico img{
+    font-size: 24px;
+    width: 1em;
+    text-align: center;
+
+}
+
+nav ul li a span {
+    display: block;
+    font-size: 13px;
+    color: #999;
+    font-weight: 600;
+}
+nav ul li a.active span{
+    color: #ff00b9;
+}

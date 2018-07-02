@@ -530,3 +530,14 @@ button.navbar-toggle {
     margin-top: 1.5em;
 }
 }
+.navbar-default .navbar-toggle {
+    border-color: #ddd;
+    margin-top: 2.5rem;
+    margin-right: 1rem;
+}
+@media (max-width: 480px){
+.services-grid-right h4{
+    font-size: 1.2em;
+    margin-left: 3rem;
+}
+    }

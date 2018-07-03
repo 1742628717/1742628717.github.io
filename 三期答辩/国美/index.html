@@ -558,6 +558,104 @@
     <script src="js/swiper-4.2.6.min.js"></script>
     <script src="js/vue.js"></script>
     <script>
+         //首页国美秒杀部分的效果（倒计时）
+        function countTime() {
+            //获取当前时间
+            var date = new Date();
+            var now = date.getTime();
+            //设置截止时间
+            var str = "2018/7/5 18:00:00";
+            var endDate = new Date(str);
+            var end = endDate.getTime();
+
+            //时间差
+            var leftTime = end - now;
+            //定义变量 d,h,m,s保存倒计时的时间
+            var d, h, m, s;
+            if (leftTime >= 0) {
+                d = Math.floor(leftTime / 1000 / 60 / 60 / 24);
+                h = Math.floor(leftTime / 1000 / 60 / 60 % 24);
+                m = Math.floor(leftTime / 1000 / 60 % 60);
+                s = Math.floor(leftTime / 1000 % 60);
+            }
+            //将倒计时赋值到div中
+            //document.getElementById("_d").innerHTML = d + "天";
+            if(h!==undefined){
+                if(h<10){
+                    document.getElementById("_h").innerHTML = "0"+h;
+                }else{
+                    document.getElementById("_h").innerHTML = h;
+                }
+                if(m<10){
+                    document.getElementById("_m").innerHTML = "0"+m;
+                }else{
+                    document.getElementById("_m").innerHTML = m;
+                }
+                if(s<10){
+                    document.getElementById("_s").innerHTML = "0"+s;
+                }else{
+                    document.getElementById("_s").innerHTML = s;
+                }
+            }else{
+                document.getElementById("_h").innerHTML = "00";
+                document.getElementById("_m").innerHTML = "00";
+                document.getElementById("_s").innerHTML = "00";
+            }
+            //递归每秒调用countTime方法，显示动态时间效果
+            setTimeout(countTime, 1000);
+
+        }
+
+        countTime();
+        
+//        onscroll事件
+        window.addEventListener("scroll",function(){
+            if(document.body.scrollTop>180){
+                document.querySelector(".search").style.background = "#884c60";
+            }else{
+                document.querySelector(".search").style.background = "none";
+            }
+        })
+        
+//        swiper
+        
+        
+        
+        var mySwiper1 = new Swiper ('.banner',{
+//            direction: 'vertical',
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        })
+        
+        //================================================
+        var zhibanner = document.querySelector(".zhibanner");
+        var swiper = new Swiper('.zhibanner', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+        on: {
+        slideChangeTransitionEnd: function(){
+          console.log(document.querySelectorAll(".zhibo .swiper-slide")[[this.activeIndex]].children[0].src);//切换结束时，告诉我现在是第几个slide
+            zhibanner.style.backgroundImage = "url("+document.querySelectorAll(".zhibo .swiper-slide")[[this.activeIndex]].children[0].src+")";
+        },
+  },
+    });
         var btt = document.querySelector(".btnnn a")
         btt.onclick=function(){
             alert("活动已结束")

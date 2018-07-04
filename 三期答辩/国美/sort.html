@@ -53,63 +53,404 @@
                <div class="list">
                    <ul>
                        <li><a href="#" class="active">
-                           热门分类
+                           为你推荐
                        </a></li>
                        <li><a href="#">
-                           手机数码
+                           华为手机
                        </a></li>
                        <li><a href="#">
-                           电脑办公
+                           专属配件
                        </a></li>
                        <li><a href="#">
-                           电视影音
+                           荣耀手机
                        </a></li>
                        <li><a href="#">
-                           空调冰洗
+                           笔记本&平板
                        </a></li>
                        <li><a href="#">
-                           厨房卫浴
+                           智能穿戴
                        </a></li>
                        <li><a href="#">
-                           生活电器
+                           智能家居
                        </a></li>
                        <li><a href="#">
-                           食品酒水
+                           通用配件
                        </a></li>
                        <li><a href="#">
-                           美妆个护
+                           生态产品
                        </a></li>
                        <li><a href="#">
-                           母婴玩具
-                       </a></li>
-                       <li><a href="#">
-                           医疗保健
-                       </a></li>
-                       <li><a href="#">
-                           服饰鞋帽
+                           增值服务
                        </a></li>
                    </ul>
                </div>
            </div>
            <div class="col-xs-9 one">
                 <ul class="nav">
-                    <li v-for="arr in arrs">
-                        <h3>{{arr.name}}</h3>
-                        <div class="row">
-                            <div class="col-xs-4">
-                                <img :src="arr.img" alt="">
-                                <p>{{arr.name1}}</p>
-                            </div>
-                            <div class="col-xs-4">
-                                <img :src="arr.img2" alt="">
-                                <p>{{arr.name2}}</p>
-                            </div>
-                            <div class="col-xs-4">
-                                <img :src="arr.img3" alt="">
-                                <p>{{arr.name3}}</p>
-                            </div>
-                        </div>
-                    </li>
+                    <li class="item">
+                           <div class="item2-list1 item-list">
+                               <div class="top-title">
+                                   <p>精选手机</p>
+                               </div>
+                               <div class="row">
+                                   <div class="col-xs-4" v-for="item2list1 in item2list1">
+                                       <a href="#">
+                                           <img :src="item2list1.img" alt="">
+                                           <p>{{item2list1.name}}</p>
+                                       </a>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="item2-list2 item-list">
+                               <div class="top-title">
+                                   <p>手机分类</p>
+                               </div>
+                               <div class="row">
+                                   <div class="col-xs-4" v-for="item2list2 in item2list2">
+                                       <a href="#">
+                                           <img :src="item2list2.img" alt="">
+                                           <p>{{item2list2.name}}</p>
+                                       </a>
+                                   </div>
+                               </div>
+                           </div>
+                       </li>
+                       <li class="item">
+                           <div class="item2-list1 item-list">
+                               <div class="top-title">
+                                   <p>精选手机</p>
+                               </div>
+                               <div class="row">
+                                   <div class="col-xs-4" v-for="item2list1 in item2list1">
+                                       <a href="#">
+                                           <img :src="item2list1.img" alt="">
+                                           <p>{{item2list1.name}}</p>
+                                       </a>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="item2-list2 item-list">
+                               <div class="top-title">
+                                   <p>手机分类</p>
+                               </div>
+                               <div class="row">
+                                   <div class="col-xs-4" v-for="item2list2 in item2list2">
+                                       <a href="#">
+                                           <img :src="item2list2.img" alt="">
+                                           <p>{{item2list2.name}}</p>
+                                       </a>
+                                   </div>
+                               </div>
+                           </div>
+                       </li>
+                       <li class="item">
+                           <div class="item2-list1 item-list">
+                               <div class="top-title">
+                                   <p>精选手机</p>
+                               </div>
+                               <div class="row">
+                                   <div class="col-xs-4" v-for="item2list1 in item2list1">
+                                       <a href="#">
+                                           <img :src="item2list1.img" alt="">
+                                           <p>{{item2list1.name}}</p>
+                                       </a>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="item2-list2 item-list">
+                               <div class="top-title">
+                                   <p>手机分类</p>
+                               </div>
+                               <div class="row">
+                                   <div class="col-xs-4" v-for="item2list2 in item2list2">
+                                       <a href="#">
+                                           <img :src="item2list2.img" alt="">
+                                           <p>{{item2list2.name}}</p>
+                                       </a>
+                                   </div>
+                               </div>
+                           </div>
+                       </li>
+                       <li class="item">
+                           <div class="item3-list1 item-list">
+                               <div class="top-title">
+                                   <p>精选手机</p>
+                               </div>
+                               <div class="row">
+                                   <div class="col-xs-4" v-for="item3list1 in item3list1">
+                                       <a href="#">
+                                           <img :src="item3list1.img" alt="">
+                                           <p>{{item3list1.name}}</p>
+                                       </a>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="item3-list2 item-list">
+                               <div class="top-title">
+                                   <p>手机分类</p>
+                               </div>
+                               <div class="row">
+                                   <div class="col-xs-4" v-for="item3list2 in item3list2">
+                                       <a href="#">
+                                           <img :src="item3list2.img" alt="">
+                                           <p>{{item3list2.name}}</p>
+                                       </a>
+                                   </div>
+                               </div>
+                           </div>
+                       </li>
+                       <li class="item">
+                           <div class="item4-list1 item-list">
+                               <div class="top-title">
+                                   <p>精选笔记本</p>
+                               </div>
+                               <div class="row">
+                                   <div class="col-xs-4" v-for="item4list1 in item4list1">
+                                       <a href="#">
+                                           <img :src="item4list1.img" alt="">
+                                           <p>{{item4list1.name}}</p>
+                                       </a>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="item4-list2 item-list">
+                               <div class="top-title">
+                                   <p>精选平板</p>
+                               </div>
+                               <div class="row">
+                                   <div class="col-xs-4" v-for="item4list2 in item4list2">
+                                       <a href="#">
+                                           <img :src="item4list2.img" alt="">
+                                           <p>{{item4list2.name}}</p>
+                                       </a>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="item4-list3 item-list">
+                               <div class="top-title">
+                                   <p>笔记本&平板分类</p>
+                               </div>
+                               <div class="row">
+                                   <div class="col-xs-4" v-for="item4list3 in item4list3">
+                                       <a href="#">
+                                           <img :src="item4list3.img" alt="">
+                                           <p>{{item4list3.name}}</p>
+                                       </a>
+                                   </div>
+                               </div>
+                           </div>
+                       </li>
+                       <li class="item">
+                           <div class="item5-list1 item-list">
+                               <div class="top-title">
+                                   <p>精选智能穿戴</p>
+                               </div>
+                               <div class="row">
+                                   <div class="col-xs-4" v-for="item5list1 in item5list1">
+                                       <a href="#">
+                                           <img :src="item5list1.img" alt="">
+                                           <p>{{item5list1.name}}</p>
+                                       </a>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="item5-list2 item-list">
+                               <div class="top-title">
+                                   <p>智能穿戴分类</p>
+                               </div>
+                               <div class="row">
+                                   <div class="col-xs-4" v-for="item5list2 in item5list2">
+                                       <a href="#">
+                                           <img :src="item5list2.img" alt="">
+                                           <p>{{item5list2.name}}</p>
+                                       </a>
+                                   </div>
+                               </div>
+                           </div>
+                       </li>
+                       <li class="item">
+                           <div class="item6-list1 item-list">
+                               <div class="top-title">
+                                   <p>精选智能家居</p>
+                               </div>
+                               <div class="row">
+                                   <div class="col-xs-4" v-for="item6list1 in item6list1">
+                                       <a href="#">
+                                           <img :src="item6list1.img" alt="">
+                                           <p>{{item6list1.name}}</p>
+                                       </a>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="item6-list2 item-list">
+                               <div class="top-title">
+                                   <p>智能家居分类</p>
+                               </div>
+                               <div class="row">
+                                   <div class="col-xs-4" v-for="item6list2 in item6list2">
+                                       <a href="#">
+                                           <img :src="item6list2.img" alt="">
+                                           <p>{{item6list2.name}}</p>
+                                       </a>
+                                   </div>
+                               </div>
+                           </div>
+                       </li>
+                       <li class="item">
+                           <div class="item7-list1 item-list">
+                               <div class="top-title">
+                                   <p>精选专属配件</p>
+                               </div>
+                               <div class="row">
+                                   <div class="col-xs-4" v-for="item7list1 in item7list1">
+                                       <a href="#">
+                                           <img :src="item7list1.img" alt="">
+                                           <p>{{item7list1.name}}</p>
+                                       </a>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="item7-list2 item-list">
+                               <div class="top-title">
+                                   <p>专属配件分类</p>
+                               </div>
+                               <div class="row">
+                                   <div class="col-xs-4" v-for="item7list2 in item7list2">
+                                       <a href="#">
+                                           <img :src="item7list2.img" alt="">
+                                           <p>{{item7list2.name}}</p>
+                                       </a>
+                                   </div>
+                               </div>
+                           </div>
+                       </li>
+                       <li class="item">
+                           <div class="item7-list1 item-list">
+                               <div class="top-title">
+                                   <p>精选专属配件</p>
+                               </div>
+                               <div class="row">
+                                   <div class="col-xs-4" v-for="item7list1 in item7list1">
+                                       <a href="#">
+                                           <img :src="item7list1.img" alt="">
+                                           <p>{{item7list1.name}}</p>
+                                       </a>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="item7-list2 item-list">
+                               <div class="top-title">
+                                   <p>专属配件分类</p>
+                               </div>
+                               <div class="row">
+                                   <div class="col-xs-4" v-for="item7list2 in item7list2">
+                                       <a href="#">
+                                           <img :src="item7list2.img" alt="">
+                                           <p>{{item7list2.name}}</p>
+                                       </a>
+                                   </div>
+                               </div>
+                           </div>
+                       </li>
+                       <li class="item">
+                           <div class="item7-list1 item-list">
+                               <div class="top-title">
+                                   <p>精选专属配件</p>
+                               </div>
+                               <div class="row">
+                                   <div class="col-xs-4" v-for="item7list1 in item7list1">
+                                       <a href="#">
+                                           <img :src="item7list1.img" alt="">
+                                           <p>{{item7list1.name}}</p>
+                                       </a>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="item7-list2 item-list">
+                               <div class="top-title">
+                                   <p>专属配件分类</p>
+                               </div>
+                               <div class="row">
+                                   <div class="col-xs-4" v-for="item7list2 in item7list2">
+                                       <a href="#">
+                                           <img :src="item7list2.img" alt="">
+                                           <p>{{item7list2.name}}</p>
+                                       </a>
+                                   </div>
+                               </div>
+                           </div>
+                       </li>
+                       <li class="item">
+                           <div class="item8-list1 item-list">
+                               <div class="top-title">
+                                   <p>精选配件</p>
+                               </div>
+                               <div class="row">
+                                   <div class="col-xs-4" v-for="item8list1 in item8list1">
+                                       <a href="#">
+                                           <img :src="item8list1.img" alt="">
+                                           <p>{{item8list1.name}}</p>
+                                       </a>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="item8-list2 item-list">
+                               <div class="top-title">
+                                   <p>通用配件分类</p>
+                               </div>
+                               <div class="row">
+                                   <div class="col-xs-4" v-for="item8list2 in item8list2">
+                                       <a href="#">
+                                           <img :src="item8list2.img" alt="">
+                                           <p>{{item8list2.name}}</p>
+                                       </a>
+                                   </div>
+                               </div>
+                           </div>
+                       </li>
+                       <li class="item">
+                           <div class="item9-list1 item-list">
+                               <div class="top-title">
+                                   <p>精选智能产品</p>
+                               </div>
+                               <div class="row">
+                                   <div class="col-xs-4" v-for="item9list1 in item9list1">
+                                       <a href="#">
+                                           <img :src="item9list1.img" alt="">
+                                           <p>{{item9list1.name}}</p>
+                                       </a>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="item9-list2 item-list">
+                               <div class="top-title">
+                                   <p>生态产品分类</p>
+                               </div>
+                               <div class="row">
+                                   <div class="col-xs-4" v-for="item9list2 in item9list2">
+                                       <a href="#">
+                                           <img :src="item9list2.img" alt="">
+                                           <p>{{item9list2.name}}</p>
+                                       </a>
+                                   </div>
+                               </div>
+                           </div>
+                       </li>
+                       <li class="item">
+                           <div class="item10-list1 item-list">
+                               <div class="top-title">
+                                   <p>礼品包装精选商品</p>
+                               </div>
+                               <div class="row">
+                                   <div class="col-xs-4" v-for="item10list1 in item10list1">
+                                       <a href="#">
+                                           <img :src="item10list1.img" alt="">
+                                           <p>{{item10list1.name}}</p>
+                                       </a>
+                                   </div>
+                               </div>
+                           </div>
+                       </li>
                 </ul>
            </div>
        </div>
@@ -143,24 +484,158 @@
         new Vue({
                 el:".main .row .one .nav",
                 data: {
-                    arrs:[
-                        {name:'大家电',name1: "平板电视",name2:'冰箱',name3:'壁挂式空调',img: 'img/sort/remen/1.png',img2:'img/sort/remen/2.png',img3:'img/sort/remen/3.png'},{name:'数码通讯',name1: "手机",name2:'笔记本电脑',name3:'单反相机',img: 'img/sort/remen/4.png',img2:'img/sort/remen/5.png',img3:'img/sort/remen/6.png'},{name:'厨卫生活',name1: "电风扇",name2:'空气净化器',name3:'微波炉',img: 'img/sort/remen/7.png',img2:'img/sort/remen/8.png',img3:'img/sort/remen/9.png'},{name:'日用百货',name1: "啤酒",name2:'品牌纸尿裤',name3:'床品件套',img: 'img/sort/remen/10.png',img2:'img/sort/remen/11.png',img3:'img/sort/remen/12.png'}
-                         ]
+        item2list1:[
+              {img:"img/class/huaweishouji/pic1.jpg",name:"HUAWEI Mate 10"},
+              {img:"img/class/huaweishouji/pic2.jpg",name:"HUAWEI P20"},
+              {img:"img/class/huaweishouji/pic3.jpg",name:"HUAWEI nova 3e"},
+              {img:"img/class/huaweishouji/pic4.jpg",name:"HUAWEI nova 2s"},
+              {img:"img/class/huaweishouji/pic5.jpg",name:"华为畅享8"},
+              {img:"img/class/huaweishouji/pic6.jpg",name:"HUAWEI P20 Pro"},
+             ],
+        item2list2:[
+              {img:"img/class/huaweishouji/pic7.jpg",name:"HUAWEI P系列"},
+              {img:"img/class/huaweishouji/pic8.jpg",name:"HUAWEI Mate系列"},
+              {img:"img/class/huaweishouji/pic9.jpg",name:"HUAWEI nova系列"},
+              {img:"img/class/huaweishouji/pic10.jpg",name:"HUAWEI 麦芒系列"},
+              {img:"img/class/huaweishouji/pic11.jpg",name:"华为畅享系列"},
+              
+             ],
+        item3list1:[
+              {img:"img/class/rongyaoshouji/pic1.jpg",name:"荣耀10"},
+              {img:"img/class/rongyaoshouji/pic2.jpg",name:"荣耀9i "},
+              {img:"img/class/rongyaoshouji/pic3.jpg",name:"荣耀V10"},
+              {img:"img/class/rongyaoshouji/pic4.jpg",name:"荣耀Play"},
+              {img:"img/class/rongyaoshouji/pic5.jpg",name:"荣耀9"},
+              {img:"img/class/rongyaoshouji/pic6.jpg",name:"荣耀畅玩7X"},
+             ],
+        item3list2:[
+              {img:"img/class/rongyaoshouji/pic7.jpg",name:"荣耀系列"},
+              {img:"img/class/rongyaoshouji/pic8.jpg",name:"荣耀畅玩系列"},
+             ],
+        item4list1:[
+              {img:"img/class/bijiben/pic1.jpg",name:"HUAWEI MateBook X Pro"},
+              {img:"img/class/bijiben/pic2.jpg",name:"荣耀MagicBook"},
+              {img:"img/class/bijiben/pic3.jpg",name:"HUAWEI MateBook D"},
+             ],
+        item4list2:[
+              {img:"img/class/bijiben/pic4.jpg",name:"华为平板 M5 10.8英寸"},
+              {img:"img/class/bijiben/pic5.jpg",name:"荣耀Waterplay"},
+              {img:"img/class/bijiben/pic6.jpg",name:"华为平板 M5 8.4英寸"},
+              {img:"img/class/bijiben/pic7.jpg",name:"荣耀畅玩平板2 9.6英寸"},
+              {img:"img/class/bijiben/pic8.jpg",name:"华为平板M3 青春版 8英寸"},
+              {img:"img/class/bijiben/pic9.jpg",name:"荣耀平板2"},
+             ],
+        item4list3:[
+              {img:"img/class/bijiben/pic10.jpg",name:"平板电脑"},
+              {img:"img/class/bijiben/pic11.jpg",name:"笔记本电脑"},
+              {img:"img/class/bijiben/pic12.jpg",name:"笔记本配件"},
+             ],
+        item5list1:[
+              {img:"img/class/zhinengchuandai/pic1.jpg",name:"HUAWEI WATCH 2 Pro"},
+              {img:"img/class/zhinengchuandai/pic2.jpg",name:"华为手环B3 青春版"},
+              {img:"img/class/zhinengchuandai/pic3.jpg",name:"荣耀手环3"},
+              {img:"img/class/zhinengchuandai/pic4.jpg",name:"HUAWEI WATCH 2"},
+              {img:"img/class/zhinengchuandai/pic5.jpg",name:"荣耀手表 S1"},
+              {img:"img/class/zhinengchuandai/pic6.jpg",name:"荣耀畅玩手环A2"},
+             ],
+        item5list2:[
+              {img:"img/class/zhinengchuandai/pic7.jpg",name:"手环"},
+              {img:"img/class/zhinengchuandai/pic8.jpg",name:"手表"},
+              {img:"img/class/zhinengchuandai/pic9.jpg",name:"VR"},
+             ],
+        item6list1:[
+              {img:"img/class/zhinengjiaju/pic1.jpg",name:"华为子母路由 Q2"},
+              {img:"img/class/zhinengjiaju/pic2.jpg",name:"华为随行WiFi 2"},
+              {img:"img/class/zhinengjiaju/pic3.jpg",name:"荣耀路由2"},
+              {img:"img/class/zhinengjiaju/pic4.jpg",name:"华为路由 A1 畅享版"},
+              {img:"img/class/zhinengjiaju/pic5.jpg",name:"荣耀路由X1 增强版"},
+              {img:"img/class/zhinengjiaju/pic6.jpg",name:"华为路由器 WS318 增强版"},
+             ],
+        item6list2:[
+              {img:"img/class/zhinengjiaju/pic7.jpg",name:"路由器"},
+              {img:"img/class/zhinengjiaju/pic8.jpg",name:"子母/分布式路由"},
+              {img:"img/class/zhinengjiaju/pic9.jpg",name:"电力猫/wifi放大器"},
+              {img:"img/class/zhinengjiaju/pic10.jpg",name:"随行wifi"},
+              {img:"img/class/zhinengjiaju/pic11.jpg",name:"电视盒子"},
+             ],
+        item7list1:[
+              {img:"img/class/zhuanshupeijian/pic1.jpg",name:"HUAWEI Mate RS 保时捷设计 智能视窗皮套"},
+              {img:"img/class/zhuanshupeijian/pic2.jpg",name:"荣耀V10 TPU保护壳"},
+              {img:"img/class/zhuanshupeijian/pic3.jpg",name:"HUAWEI P20智能视窗保护套"},
+              {img:"img/class/zhuanshupeijian/pic4.jpg",name:"HUAWEI Mate RS 保时捷设计 真皮皮套"},
+              {img:"img/class/zhuanshupeijian/pic5.jpg",name:"荣耀畅玩平板note 屏幕保护膜"},
+              {img:"img/class/zhuanshupeijian/pic6.jpg",name:"HUAWEI WATCH 2 表带"},
+             ],
+        item7list2:[
+              {img:"img/class/zhuanshupeijian/pic7.jpg",name:"保护壳"},
+              {img:"img/class/zhuanshupeijian/pic8.jpg",name:"保护套"},
+              {img:"img/class/zhuanshupeijian/pic9.jpg",name:"贴膜"},
+              {img:"img/class/zhuanshupeijian/pic10.jpg",name:"盒子专属配件"},
+              {img:"img/class/zhuanshupeijian/pic11.jpg",name:"表带"},
+             ],
+        item8list1:[
+              {img:"img/class/tongyongpeijian/pic1.jpg",name:"华为智能体脂秤"},
+              {img:"img/class/tongyongpeijian/pic2.jpg",name:"荣耀xSport 运动蓝牙耳机"},
+              {img:"img/class/tongyongpeijian/pic3.jpg",name:"华为移动电源"},
+              {img:"img/class/tongyongpeijian/pic4.jpg",name:"荣耀心晴耳机"},
+              {img:"img/class/tongyongpeijian/pic5.jpg",name:"华为车载快速充电器"},
+              {img:"img/class/tongyongpeijian/pic6.jpg",name:"荣耀体脂秤"},
+             ],
+        item8list2:[
+              {img:"img/class/tongyongpeijian/pic7.jpg",name:"移动电源"},
+              {img:"img/class/tongyongpeijian/pic8.jpg",name:"耳机"},
+              {img:"img/class/tongyongpeijian/pic9.jpg",name:"充电器/线材"},
+              {img:"img/class/tongyongpeijian/pic10.jpg",name:"自拍杆/支架"},
+              {img:"img/class/tongyongpeijian/pic11.jpg",name:"音箱"},
+              {img:"img/class/tongyongpeijian/pic12.jpg",name:"U盘/存储卡"},
+              {img:"img/class/tongyongpeijian/pic13.jpg",name:"摄像机/镜头"},
+              {img:"img/class/tongyongpeijian/pic14.jpg",name:"智能硬件"},
+              {img:"img/class/tongyongpeijian/pic15.jpg",name:"生活周边"},
+             ],
+        item9list1:[
+              {img:"img/class/shengtaichanpin/pic1.jpg",name:"海雀摄像头Q1"},
+              {img:"img/class/shengtaichanpin/pic2.jpg",name:"科沃斯扫地机器人DG31"},
+              {img:"img/class/shengtaichanpin/pic3.jpg",name:"博联智能排插"},
+              {img:"img/class/shengtaichanpin/pic4.jpg",name:"55度智能降温杯"},
+              {img:"img/class/shengtaichanpin/pic5.jpg",name:"品多智能指纹门锁M1"},
+              {img:"img/class/shengtaichanpin/pic6.jpg",name:"720全智能净化器EP800"},
+             ],
+        item9list2:[
+              {img:"img/class/shengtaichanpin/pic7.jpg",name:"照明"},
+              {img:"img/class/shengtaichanpin/pic8.jpg",name:"清洁"},
+              {img:"img/class/shengtaichanpin/pic9.jpg",name:"节能"},
+              {img:"img/class/shengtaichanpin/pic10.jpg",name:"环境"},
+              {img:"img/class/shengtaichanpin/pic11.jpg",name:"安防"},
+              {img:"img/class/shengtaichanpin/pic12.jpg",name:"健康"},
+              {img:"img/class/shengtaichanpin/pic13.jpg",name:"厨电"},
+              {img:"img/class/shengtaichanpin/pic14.jpg",name:"影音"},
+              {img:"img/class/shengtaichanpin/pic15.jpg",name:"卫浴"},
+              {img:"img/class/shengtaichanpin/pic16.jpg",name:"其他"},
+             ],
+        item10list1:[
+              {img:"img/class/zengzhiyewu/pic1.jpg",name:"HUAWEI Mate 10"},
+              {img:"img/class/zengzhiyewu/pic2.jpg",name:"HUAWEI Mate 10 Pro"},
+             ],
                 }
             });
 //选项卡
         var c3lists = document.querySelectorAll(".main>.row>.col-xs-3 .list ul li a");
-        var bian = document.querySelector(".main .row .col-xs-9")
+        var bian = document.querySelector(".main .row .col-xs-9");
+        var c9lists = document.querySelectorAll(".main .row .col-xs-9 .nav li");
         for(let i=0;i<c3lists.length;i++){
+            c3lists[i].index = i;
+            c9lists[i].style.display = "none";
+            c9lists[0].style.display = "block";
         c3lists[i].onclick = function(){
             
         for(let j=0;j<c3lists.length;j++){
             c3lists[j].setAttribute("class","");
+            c9lists[j].style.display = "none";
         }
             this.setAttribute("class","active");
+            c9lists[this.index].style.display = "block";
             }
         }
-        
         
 
     </script>

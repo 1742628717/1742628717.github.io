@@ -561,3 +561,16 @@ nav ul li a.active span{
 .user_bar a:nth-of-type(4){
     border-right:none;
 }
+
+.gotop {
+    width: 2.5rem;
+    height: 2.5rem;
+    position: fixed;
+    right: 20px;
+    bottom: 80px;
+    z-index: 20;
+}
+
+.gotop img {
+    width: 100%;
+}
